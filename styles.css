@@ -1,73 +1,43 @@
-/* Global Styles */
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-ul {
-    list-style: none;
-}
-
-/* Header & Navigation */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background: #282c34;
+    padding: 10px 20px;
 }
 
 .logo {
-    font-size: 1.8rem;
+    color: #61dafb;
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
+    display: inline-block;
 }
 
 .nav-links {
-    display: flex;
-    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    float: right;
 }
 
-.nav-links li a {
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
 }
 
-.nav-links li a:hover {
-    background-color: #f4f4f4;
-    color: #333;
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,146 +45,55 @@ nav {
 }
 
 .hero-content {
-    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    padding: 10px 25px;
-    background-color: #f39c12;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e67e22;
-}
-
-/* About Section */
-.about {
-    padding: 3rem 1rem;
-    background-color: #fff;
+.about, .services, .pricing, .contact {
+    padding: 40px 20px;
     text-align: center;
 }
 
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Services Section */
-.services {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+h2 {
+    margin-bottom: 20px;
+    color: #282c34;
 }
 
 .service-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .service-item {
-    background-color: #fff;
-    padding: 2rem;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    transition: transform 0.3s ease;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #61dafb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-.service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #333;
+.btn:hover {
+    background: #21a1f1;
 }
 
-.service-item p {
-    color: #777;
-}
-
-/* Contact Section */
-.contact {
-    padding: 3rem 1rem;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem 0;
+    background: #282c34;
+    color: white;
     text-align: center;
-    font-size: 0.9rem;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 1rem;
-    }
-
-    .service-list {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-}
-
