@@ -1,219 +1,54 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3buk Productions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">3buk Productions</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to 3buk Productions</h1>
+            <p>Your sound, your vision, your production partner for unforgettable live shows.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>3buk Productions is a premier event management company, owned by Nirmal Singh and Resham Singh Anmol. We specialize in hosting live shows, with Resham Singh Anmol, the famous Punjabi singer, bringing energy and passion to every stage. Nirmal Singh, his manager, ensures seamless production, making each event a memorable experience.</p>
+    </section>
 
-ul {
-    list-style: none;
-}
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Live Show Hosting</h3>
+                <p>We organize and host unforgettable live shows featuring Resham Singh Anmol and other talents.</p>
+            </div>
+        </div>
+    </section>
 
-/* Header & Navigation */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at <a href="mailto:info@3bukproductions.com">info@3bukproductions.com</a> or call +1 (234) 567-8901.</p>
+    </section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links li a {
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 700px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    padding: 10px 25px;
-    background-color: #f39c12;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e67e22;
-}
-
-/* About Section */
-.about {
-    padding: 3rem 1rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Services Section */
-.services {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.service-item {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-    transform: translateY(-10px);
-}
-
-.service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.service-item p {
-    color: #777;
-}
-
-/* Contact Section */
-.contact {
-    padding: 3rem 1rem;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 1rem;
-    }
-
-    .service-list {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-}
+    <footer>
+        <p>&copy; 2024 3buk Productions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
