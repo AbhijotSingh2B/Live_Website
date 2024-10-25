@@ -126,7 +126,7 @@ nav {
 .about-content {
     display: flex;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     gap: 1.5rem;
 }
