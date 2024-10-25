@@ -122,6 +122,20 @@ nav {
     margin: 0 auto;
     line-height: 1.8;
 }
+/* About Page Photo Styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-photo {
+    width: 250px; /* Adjust the width as per your preference */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Services Section */
 .services {
