@@ -194,7 +194,6 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-grow: 0.8;
 }
 
 .contact h2 {
