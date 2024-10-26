@@ -137,6 +137,9 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.id-footer {
+    
+}
 
 /* Services Section */
 .services {
@@ -203,7 +206,7 @@ nav {
 footer {
     background-color: #222;
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
     font-size: 0.9rem;
 }
