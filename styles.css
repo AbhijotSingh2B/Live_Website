@@ -192,8 +192,6 @@ nav {
     width: 100%;
     color: #fff;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .contact h2 {
