@@ -200,6 +200,14 @@ nav {
     line-height: 1.8;
 }
 
+.contact-photo {
+    width: 10%;
+    height: 10%;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
 /* Footer */
 footer {
     background-color: #222;
@@ -238,4 +246,3 @@ footer p {
         font-size: 1rem;
     }
 }
-
